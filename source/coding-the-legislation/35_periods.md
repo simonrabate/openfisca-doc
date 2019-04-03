@@ -66,10 +66,10 @@ from openfisca_core import periods
 period_2015 = periods.period('2015')
 ```
 
-Internally, periods are stored as:
-- a start `Instant`
-- a unit (`DAY`, `MONTH`, `YEAR`)
-- a quantity of units.
+> Internally, periods are stored as:
+> - a start `Instant`
+> - a unit (`DAY`, `MONTH`, `YEAR`)
+> - a quantity of units.
 
 The previous example could also be defined as:
 
