@@ -41,16 +41,10 @@ This [YAML test](writing_yaml_tests.md) on `income_tax` evolution over time show
 ```
 
 This syntax could also be used in Python.  
-This example sets salaries for two persons:
+This example sets 3 years salaries for two persons and calculates how much they get for one month:
 
 ```py
 # Each person earned 60,000 between 2014 and 2016
-simulation.set_input('salary', 'year:2014:3', [60000.0, 60000.0])
-```
-
-The same syntax could also be used to calculate a variable when the variable has a [set_input](35_periods.html#set-input-automatically-process-variable-inputs-defined-for-periods-not-matching-the-definition-period) attribute:
-
-```py
 simulation.set_input('salary', 'year:2014:3', [60000.0, 60000.0])
 
 one_month_salaries = simulation.calculate('salary', 'month:2014-01:1')
