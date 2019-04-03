@@ -10,7 +10,7 @@ The smallest unit for OpenFisca periods is the **day**. Therefore:
 An `Instant` is a specific day, such as a cutoff date.
 
 
-## Periods creation
+## Manipulating Period objects in Python
 
 To create a `Period`, you can use a simplified syntax. Here is an example for a period of one year covering `2015`:
 
