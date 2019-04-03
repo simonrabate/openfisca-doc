@@ -16,6 +16,7 @@ In OpenFisca inputs, periods are encoded in strings. All the valid period format
 |-------------------|-----------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------------|
 | `AAAA`            | Calendar year   | `'2010'`            | The year 2010.                                   | From the 1st of January 2010 to the 31st of December 2010, inclusive. |
 | `AAAA-MM`         | Month           | `'2010-04'`         | The month of April 2010.                         | From the 1st of April 2010 to the 30th of April 2010, inclusive.      |
+| `AAAA-MM-DD`      | Day             | `'2010-04-06'`      | The day of the 6th of April 2010.                | The whole day of the 6th of April 2010.      |
 | `year:AAAA-MM`    | Rolling year    | `'year:2010-04'`    | The 1 year period starting in April 2010. | From the 1st of April 2010 to the 31st of March 2011, inclusive       |
 | `year:AAAA:N`     | N years         | `'year:2010:3'`     | The years 2010, 2011 and 2012.                   | From the 1st of January 2010 to the 31st of December 2012, inclusive. |
 | `year:AAAA-MM:N`  | N rolling years | `'year:2010-04:3'`  | The three years period starting in April 2010.   | From the 1st of April 2010 to the 31st of March 2013, inclusive.      |
