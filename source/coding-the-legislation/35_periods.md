@@ -53,8 +53,8 @@ The same syntax could also be used to calculate a variable when the variable has
 ```py
 simulation.set_input('salary', 'year:2014:3', [60000.0, 60000.0])
 
-two_years_salaries = simulation.calculate_add('salary', 'year:2014:2')
-print(two_years_salaries)  # prints [40000. 40000.]
+one_month_salaries = simulation.calculate('salary', 'month:2014-01:1')
+print(one_month_salaries)  # prints [1666.6666 1666.6666]
 ```
 
 ## Manipulating Period objects in Python
