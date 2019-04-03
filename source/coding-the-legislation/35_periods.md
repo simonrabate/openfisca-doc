@@ -1,13 +1,12 @@
 # Periods and Instants
 
-A `Period` can be a day, a month, a year, `n` successive days, `n` successive months, `n` successive years or the eternity.
-
-The smallest unit for OpenFisca periods is the **day**. Therefore:
-
-- All periods are presumed to start on the first day of their first month.
-- A period cannot be smaller than a day.
-
+A `Period` can be a day, a month, a year, `n` successive days, `n` successive months, `n` successive years or the eternity.  
 An `Instant` is a specific day, such as a cutoff date.
+
+You will mainly use `Period` objects.
+
+The smallest unit for OpenFisca periods is the **day**.  
+Larger periods, like `month` or `year`, are presumed to start on the first day of their first month.
 
 ## Periods in simulations
 
@@ -72,7 +71,7 @@ Internally, periods are stored as:
 - a unit (`DAY`, `MONTH`, `YEAR`)
 - a quantity of units.
 
-Thus, the previous example could also be defined as:
+The previous example could also be defined as:
 
 ```py
 from openfisca_core import periods
