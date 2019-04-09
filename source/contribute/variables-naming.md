@@ -1,4 +1,4 @@
-OpenFisca variables : naming guidelines
+OpenFisca variables: naming guidelines
 =======================================
 
 General philosophy
