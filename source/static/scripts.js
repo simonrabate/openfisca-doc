@@ -28,4 +28,7 @@ $(document).ready(function() {
         return PATHNAME + href;
       }
     );
+
+    // Activate action button tooltip
+    $('.actionbutton').tooltip()
 });
